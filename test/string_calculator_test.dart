@@ -1,5 +1,4 @@
 import 'package:flutter_test/flutter_test.dart';
-
 import '../tool/string_calculator.dart';
 
 void main() {
