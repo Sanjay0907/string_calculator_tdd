@@ -36,12 +36,12 @@ class StringCalculator {
 void main() {
   final calculator = StringCalculator();
 
-  print("📌 String Calculator");
+  print("String String Calculator");
   print(
       "Enter a string of numbers (use , or \\n or custom delimiter like //;\\n1;2):");
 
   while (true) {
-    stdout.write("\n➡️  Input: ");
+    stdout.write("\n  Input: ");
     String? input = stdin
         .readLineSync()
         ?.replaceAll(r'\n', '\n') // Convert \n string into real newline
@@ -49,16 +49,16 @@ void main() {
         .trim(); // Clean up whitespace
 
     if (input == null || input.trim().toLowerCase() == 'exit') {
-      print("👋 Exiting. Goodbye!");
+      print("Exiting. Goodbye!");
       break;
     }
 
     try {
       print(input);
       int result = calculator.add(input);
-      print("✅ Result: $result");
+      print("Result: $result");
     } catch (e) {
-      print("❌ Error: $e");
+      print("Error: $e");
     }
   }
 }
